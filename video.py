@@ -149,3 +149,6 @@ def writeVideToFile():
 # videofromWebcam()
 # videoFromFIle()
 writeVideToFile()
+
+# ret – tells you whether OpenCV successfully captured a frame.
+# frame – contains the actual picture captured by the webcam.
