@@ -9,4 +9,15 @@ def grayscale():
     cv.imshow("gray",imgGray)
     cv.waitKey(0)
 
-grayscale()
+def readGray():
+    root=os.getcwd()
+    imgPath=os.path.join(root,"demoImage\\cutepic1.jpeg")
+    img=cv.imread(imgPath,cv.IMREAD_GRAYSCALE)
+
+    cv.imshow("gray",img)
+    cv.waitKey(0)
+
+readGray()
+
+# //Use cvIMREAD_GRAYSCALE when you only need a grayscale image.
+# Use cv.cvtColor() when you first need to read the image in color and then convert it later.1
